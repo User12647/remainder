@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website Title</title>
+  <title>Your  Title</title>
 </head>
 <body>
 
   <!-- Your website content goes here -->
 
-  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script src="https://cdn.onesignal.com/sdks/web/v16.0.0/OneSignalSDK.js" async=""></script>
   <script>
-    window.OneSignalDeferred = window.OneSignalDeferred || [];
-    OneSignalDeferred.push(function(OneSignal) {
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
       OneSignal.init({
         appId: "ad3a6b90-e8a8-4b59-b7ff-1d174101ba10",
         safari_web_id: "web.onesignal.auto.5093406a-927f-4c57-a877-608b6718a7cc",
